@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TempoMonitor.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84a1e64afc61dc690597703f9961b16677bca155")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7949192c1ed4f8d18d0d4901a53aec4eba4515e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TempoMonitor.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TempoMonitor.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

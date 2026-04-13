@@ -6,24 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "TempoMonitor.Web/1.0.0": {
-        "dependencies": {
-          "TempoMonitor.Application": "1.0.0",
-          "TempoMonitor.Domain": "1.0.0"
-        },
-        "runtime": {
-          "TempoMonitor.Web.dll": {}
-        }
-      },
       "TempoMonitor.Application/1.0.0": {
         "dependencies": {
           "TempoMonitor.Domain": "1.0.0"
         },
         "runtime": {
-          "TempoMonitor.Application.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "TempoMonitor.Application.dll": {}
         }
       },
       "TempoMonitor.Domain/1.0.0": {
@@ -37,11 +25,6 @@
     }
   },
   "libraries": {
-    "TempoMonitor.Web/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "TempoMonitor.Application/1.0.0": {
       "type": "project",
       "serviceable": false,

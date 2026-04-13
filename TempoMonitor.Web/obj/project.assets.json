@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net10.0": {
+      "TempoMonitor.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "TempoMonitor.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TempoMonitor.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TempoMonitor.Application.dll": {}
+        }
+      },
       "TempoMonitor.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "TempoMonitor.Application/1.0.0": {
+      "type": "project",
+      "path": "../TempoMonitor.Application/TempoMonitor.Application.csproj",
+      "msbuildProject": "../TempoMonitor.Application/TempoMonitor.Application.csproj"
+    },
     "TempoMonitor.Domain/1.0.0": {
       "type": "project",
       "path": "../TempoMonitor.Domain/TempoMonitor.Domain.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "TempoMonitor.Application >= 1.0.0",
       "TempoMonitor.Domain >= 1.0.0"
     ]
   },
@@ -55,6 +74,9 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
+            "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Application\\TempoMonitor.Application.csproj": {
+              "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Application\\TempoMonitor.Application.csproj"
+            },
             "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj": {
               "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj"
             }

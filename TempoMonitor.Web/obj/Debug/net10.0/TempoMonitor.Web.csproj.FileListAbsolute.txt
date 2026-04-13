@@ -31,3 +31,5 @@ C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monito
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web\bin\Debug\net10.0\TempoMonitor.Domain.pdb
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web\obj\Debug\net10.0\TempoMonitor.Web.csproj.AssemblyReference.cache
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web\obj\Debug\net10.0\TempoMon.A9B79947.Up2Date
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web\bin\Debug\net10.0\TempoMonitor.Application.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web\bin\Debug\net10.0\TempoMonitor.Application.pdb
