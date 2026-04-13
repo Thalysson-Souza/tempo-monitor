@@ -1,2 +1,4 @@
 <Solution>
+  <Project Path="TempoMonitor.Application/TempoMonitor.Application.csproj" />
+  <Project Path="TempoMonitor.Domain/TempoMonitor.Domain.csproj" />
 </Solution>

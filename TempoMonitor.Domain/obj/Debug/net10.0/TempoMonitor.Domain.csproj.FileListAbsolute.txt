@@ -1,0 +1,12 @@
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\bin\Debug\net10.0\TempoMonitor.Domain.deps.json
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\bin\Debug\net10.0\TempoMonitor.Domain.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\bin\Debug\net10.0\TempoMonitor.Domain.pdb
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\TempoMonitor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\TempoMonitor.Domain.AssemblyInfoInputs.cache
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\TempoMonitor.Domain.AssemblyInfo.cs
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\TempoMonitor.Domain.csproj.CoreCompileInputs.cache
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\TempoMonitor.Domain.sourcelink.json
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\TempoMonitor.Domain.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\refint\TempoMonitor.Domain.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\TempoMonitor.Domain.pdb
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Domain\obj\Debug\net10.0\ref\TempoMonitor.Domain.dll

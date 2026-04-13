@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "TempoMonitor.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TempoMonitor.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TempoMonitor.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TempoMonitor.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TempoMonitor.Domain/TempoMonitor.Domain.csproj",
+      "msbuildProject": "../TempoMonitor.Domain/TempoMonitor.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "TempoMonitor.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\desen\\.nuget\\packages\\": {},
@@ -35,7 +54,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj": {
+              "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+  <ItemGroup>
+    <ProjectReference Include="..\TempoMonitor.Domain\TempoMonitor.Domain.csproj" />
+    <ProjectReference Include="..\TempoMonitor.Application\TempoMonitor.Application.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
