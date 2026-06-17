@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TempoMonitor.Domain\TempoMonitor.Domain.csproj" />
     <ProjectReference Include="..\TempoMonitor.Application\TempoMonitor.Application.csproj" />
+    <ProjectReference Include="..\TempoMonitor.Infrastructure\TempoMonitor.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

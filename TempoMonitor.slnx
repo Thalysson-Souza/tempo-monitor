@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="TempoMonitor.Application/TempoMonitor.Application.csproj" />
   <Project Path="TempoMonitor.Domain/TempoMonitor.Domain.csproj" />
+  <Project Path="TempoMonitor.Infrastructure/TempoMonitor.Infrastructure.csproj" />
   <Project Path="TempoMonitor.Web/TempoMonitor.Web.csproj" />
 </Solution>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HqNbNbPRMIw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\desen\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.9\\microsoft.extensions.dependencyinjection.abstractions.10.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+POST http://localhost:5172/locations
+Content-Type: application/json
+
+{
+  "name": "casa",
+  "city": "Sao Paulo",
+  "latitude": -23.5505,
+  "longitude": -46.6333
+}
+
+###
+
+GET http://localhost:5172/locations
+
+###
+
+GET http://localhost:5172/locations/74d3cfaf-7c64-4da2-9af2-6ce118910736 

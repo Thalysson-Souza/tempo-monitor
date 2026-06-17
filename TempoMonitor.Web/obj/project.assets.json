@@ -24,6 +24,20 @@
         "runtime": {
           "bin/placeholder/TempoMonitor.Domain.dll": {}
         }
+      },
+      "TempoMonitor.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "TempoMonitor.Application": "1.0.0",
+          "TempoMonitor.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TempoMonitor.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TempoMonitor.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -37,12 +51,18 @@
       "type": "project",
       "path": "../TempoMonitor.Domain/TempoMonitor.Domain.csproj",
       "msbuildProject": "../TempoMonitor.Domain/TempoMonitor.Domain.csproj"
+    },
+    "TempoMonitor.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TempoMonitor.Infrastructure/TempoMonitor.Infrastructure.csproj",
+      "msbuildProject": "../TempoMonitor.Infrastructure/TempoMonitor.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "TempoMonitor.Application >= 1.0.0",
-      "TempoMonitor.Domain >= 1.0.0"
+      "TempoMonitor.Domain >= 1.0.0",
+      "TempoMonitor.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -79,6 +99,9 @@
             },
             "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj": {
               "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj"
+            },
+            "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj"
             }
           }
         }

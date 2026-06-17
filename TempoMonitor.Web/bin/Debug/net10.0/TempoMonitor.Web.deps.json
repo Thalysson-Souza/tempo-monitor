@@ -9,7 +9,8 @@
       "TempoMonitor.Web/1.0.0": {
         "dependencies": {
           "TempoMonitor.Application": "1.0.0",
-          "TempoMonitor.Domain": "1.0.0"
+          "TempoMonitor.Domain": "1.0.0",
+          "TempoMonitor.Infrastructure": "1.0.0"
         },
         "runtime": {
           "TempoMonitor.Web.dll": {}
@@ -33,6 +34,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "TempoMonitor.Infrastructure/1.0.0": {
+        "dependencies": {
+          "TempoMonitor.Application": "1.0.0",
+          "TempoMonitor.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TempoMonitor.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -48,6 +61,11 @@
       "sha512": ""
     },
     "TempoMonitor.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TempoMonitor.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
