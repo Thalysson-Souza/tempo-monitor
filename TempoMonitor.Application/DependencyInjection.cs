@@ -10,6 +10,8 @@ public static class DependencyInjection
         services.AddScoped<CreateLocation>();
         services.AddScoped<GetAllLocations>();
         services.AddScoped<GetLocationById>();
+        services.AddScoped<DeactivateLocation>();
+        services.AddScoped<UpdateLocation>();
 
         return services;
     }

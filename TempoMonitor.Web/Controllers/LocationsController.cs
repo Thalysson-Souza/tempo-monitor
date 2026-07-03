@@ -65,6 +65,58 @@ public class LocationsController : ControllerBase
         return Ok(ToResponse(location));
     }
 
+    [HttpDelete("{id:guid}")]
+    public IActionResult Delete(
+        Guid id,
+        DeactivateLocation deactivateLocation
+    )
+    {
+        var result = deactivateLocation.Execute(id);
+
+        if (!result)
+        {
+            return NotFound();
+        }
+
+        return NoContent();
+    }
+
+    [HttpPut("{id:guid}")]
+    public IActionResult Update(
+        Guid id,
+        UpdateLocationRequest request,
+        UpdateLocation updateLocation
+    )
+    {
+        try
+        {
+            var input = new UpdateLocationInput
+            {
+                Id = id,
+                Name = request.Name,
+                City = request.City,
+                Latitude = request.Latitude,
+                Longitude = request.Longitude
+            };
+
+            var location = updateLocation.Execute(input);
+
+            if (location is null)
+            {
+                return NotFound();
+            }
+
+            return Ok(ToResponse(location));
+        }
+        catch (ArgumentException exception)
+        {
+            return BadRequest(new
+            {
+                message = exception.Message
+            });
+        }
+    }
+
     #region Helper Methods
     private static LocationResponse ToResponse(Location location)
     {

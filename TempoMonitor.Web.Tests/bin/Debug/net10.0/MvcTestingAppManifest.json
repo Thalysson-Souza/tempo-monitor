@@ -1,0 +1,6 @@
+{
+  "TempoMonitor.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Application",
+  "TempoMonitor.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain",
+  "TempoMonitor.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure",
+  "TempoMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Web"
+}

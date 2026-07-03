@@ -7,4 +7,5 @@ public interface ILocationRepository
     void Add(Location location);
     List<Location> GetAll();
     Location? GetById(Guid id);
+    Location? Update(Location location);
 }

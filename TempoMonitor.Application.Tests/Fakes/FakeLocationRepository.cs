@@ -21,4 +21,22 @@ public class FakeLocationRepository : ILocationRepository
     {
         return Locations.FirstOrDefault(location => location.Id == id);
     }
+
+    public Location? Update(Location location)
+    {
+        var existingLocation = GetById(location.Id);
+
+        if (existingLocation is null)
+        {
+            return null;
+        }
+
+        existingLocation.Name = location.Name;
+        existingLocation.City = location.City;
+        existingLocation.Latitude = location.Latitude;
+        existingLocation.Longitude = location.Longitude;
+        existingLocation.IsActive = location.IsActive;
+
+        return existingLocation;
+    }
 }
