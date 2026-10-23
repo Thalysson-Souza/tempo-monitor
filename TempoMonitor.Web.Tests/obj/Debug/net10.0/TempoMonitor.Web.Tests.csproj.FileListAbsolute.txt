@@ -103,8 +103,6 @@ C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monito
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.AspNetCore.WebSockets.dll
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.AspNetCore.WebUtilities.dll
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.CSharp.dll
-C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Configuration.Ini.dll
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Configuration.Xml.dll
@@ -424,3 +422,10 @@ C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monito
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\obj\Debug\net10.0\TempoMonitor.Web.Tests.pdb
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\obj\Debug\net10.0\TempoMonitor.Web.Tests.genruntimeconfig.cache
 C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\obj\Debug\net10.0\ref\TempoMonitor.Web.Tests.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\Npgsql.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monitor\TempoMonitor.Web.Tests\bin\Debug\net10.0\Microsoft.Extensions.Caching.Memory.dll

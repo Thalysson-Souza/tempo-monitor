@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using TempoMonitor.Application.DTOs.Locations;
 using TempoMonitor.Application.UseCases.Locations;
-using TempoMonitor.Domain.Entities;
 using TempoMonitor.Web.Contracts.Locations;
+using TempoMonitor.Web.Mappers;
 
 namespace TempoMonitor.Web.Controllers;
 
@@ -18,17 +17,11 @@ public class LocationsController : ControllerBase
     {
         try
         {
-            var input = new CreateLocationInput
-            {
-                Name = request.Name,
-                City = request.City,
-                Latitude = request.Latitude,
-                Longitude = request.Longitude
-            };
+            var input = LocationMapper.ToInput(request);
 
             var location = createLocation.Execute(input);
 
-            return Ok(ToResponse(location));
+            return Ok(LocationMapper.ToResponse(location));
         }
         catch (ArgumentException exception)
         {
@@ -44,7 +37,7 @@ public class LocationsController : ControllerBase
     {
         var locations = getAllLocations.Execute();
 
-        var response = locations.Select(ToResponse);
+        var response = locations.Select(LocationMapper.ToResponse);
 
         return Ok(response);
     }
@@ -62,7 +55,7 @@ public class LocationsController : ControllerBase
             return NotFound();
         }
 
-        return Ok(ToResponse(location));
+        return Ok(LocationMapper.ToResponse(location));
     }
 
     [HttpDelete("{id:guid}")]
@@ -90,14 +83,7 @@ public class LocationsController : ControllerBase
     {
         try
         {
-            var input = new UpdateLocationInput
-            {
-                Id = id,
-                Name = request.Name,
-                City = request.City,
-                Latitude = request.Latitude,
-                Longitude = request.Longitude
-            };
+            var input = LocationMapper.ToInput(id, request);
 
             var location = updateLocation.Execute(input);
 
@@ -106,7 +92,7 @@ public class LocationsController : ControllerBase
                 return NotFound();
             }
 
-            return Ok(ToResponse(location));
+            return Ok(LocationMapper.ToResponse(location));
         }
         catch (ArgumentException exception)
         {
@@ -117,18 +103,4 @@ public class LocationsController : ControllerBase
         }
     }
 
-    #region Helper Methods
-    private static LocationResponse ToResponse(Location location)
-    {
-        return new LocationResponse
-        {
-            Id = location.Id,
-            Name = location.Name,
-            City = location.City,
-            Latitude = location.Latitude,
-            Longitude = location.Longitude,
-            IsActive = location.IsActive
-        };
-    }
-    #endregion
 }

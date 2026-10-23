@@ -1,25 +1,32 @@
 using TempoMonitor.Application.Abstractions.Locations;
 using TempoMonitor.Domain.Entities;
+using TempoMonitor.Infrastructure.Persistence;
 
 namespace TempoMonitor.Infrastructure.Repositories.Locations;
 
 public class LocationRepository : ILocationRepository
 {
-    private static readonly List<Location> Locations = [];
+    private readonly TempoMonitorDbContext _context;
+
+    public LocationRepository(TempoMonitorDbContext context)
+    {
+        _context = context;
+    }
 
     public void Add(Location location)
     {
-        Locations.Add(location);
+        _context.Locations.Add(location);
+        _context.SaveChanges();
     }
 
     public List<Location> GetAll()
     {
-        return Locations;
+        return _context.Locations.ToList();
     }
 
     public Location? GetById(Guid id)
     {
-        return Locations.FirstOrDefault(location => location.Id == id);
+        return _context.Locations.FirstOrDefault(location => location.Id == id);
     }
 
     public Location? Update(Location location)
@@ -37,7 +44,8 @@ public class LocationRepository : ILocationRepository
         existingLocation.Longitude = location.Longitude;
         existingLocation.IsActive = location.IsActive;
 
+        _context.SaveChanges();
+
         return existingLocation;
     }
-
 }
