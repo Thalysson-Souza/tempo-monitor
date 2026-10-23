@@ -132,3 +132,11 @@ C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.W
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Web.runtimeconfig.json
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Web.dll
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Web.pdb
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\appsettings.Development.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\appsettings.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Web.staticwebassets.endpoints.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Web.exe
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Web.deps.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Web.runtimeconfig.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Web.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Web.pdb

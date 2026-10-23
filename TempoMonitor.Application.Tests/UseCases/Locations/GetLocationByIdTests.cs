@@ -7,7 +7,7 @@ namespace TempoMonitor.Application.Tests.UseCases.Locations;
 public class GetLocationByIdTests
 {
     [Fact]
-    public void Execute_ShouldReturnLocation_WhenLocationExists()
+    public async Task Execute_ShouldReturnLocation_WhenLocationExists()
     {
         var locationId = Guid.NewGuid();
 
@@ -25,7 +25,7 @@ public class GetLocationByIdTests
 
         var useCase = new GetLocationById(repository);
 
-        var location = useCase.Execute(locationId);
+        var location = await useCase.ExecuteAsync(locationId);
 
         Assert.NotNull(location);
         Assert.Equal(locationId, location.Id);
@@ -33,12 +33,12 @@ public class GetLocationByIdTests
     }
 
     [Fact]
-    public void Execute_ShouldReturnNull_WhenLocationDoesNotExist()
+    public async Task Execute_ShouldReturnNull_WhenLocationDoesNotExist()
     {
         var repository = new FakeLocationRepository();
         var useCase = new GetLocationById(repository);
 
-        var location = useCase.Execute(Guid.NewGuid());
+        var location = await useCase.ExecuteAsync(Guid.NewGuid());
 
         Assert.Null(location);
     }

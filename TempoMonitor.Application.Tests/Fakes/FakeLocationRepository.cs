@@ -13,19 +13,20 @@ public class FakeLocationRepository : ILocationRepository
         return Task.CompletedTask;
     }
 
-    public List<Location> GetAll()
+    public Task<List<Location>> GetAllAsync()
     {
-        return Locations;
+        return Task.FromResult(Locations);
     }
 
-    public Location? GetById(Guid id)
+    public Task<Location?> GetByIdAsync(Guid id)
     {
-        return Locations.FirstOrDefault(location => location.Id == id);
+        var location = Locations.FirstOrDefault(location => location.Id == id);
+        return Task.FromResult(location);
     }
 
-    public Location? Update(Location location)
+    public async Task<Location?> UpdateAsync(Location location)
     {
-        var existingLocation = GetById(location.Id);
+        var existingLocation = await GetByIdAsync(location.Id);
 
         if (existingLocation is null)
         {

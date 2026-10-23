@@ -12,8 +12,8 @@ public class GetAllLocations
         _locationRepository = locationRepository;
     }
 
-    public List<Location> Execute()
+    public async Task<List<Location>> ExecuteAsync()
     {
-        return _locationRepository.GetAll();
+        return await _locationRepository.GetAllAsync();
     }
 }

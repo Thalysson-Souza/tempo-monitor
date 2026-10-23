@@ -33,9 +33,9 @@ public class LocationsController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetAll(GetAllLocations getAllLocations)
+    public async Task<IActionResult> GetAll(GetAllLocations getAllLocations)
     {
-        var locations = getAllLocations.Execute();
+        var locations = await getAllLocations.ExecuteAsync();
 
         var response = locations.Select(LocationMapper.ToResponse);
 
@@ -43,12 +43,12 @@ public class LocationsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
-    public IActionResult GetById(
+    public async Task<IActionResult> GetById(
         Guid id,
         GetLocationById getLocationById
     )
     {
-        var location = getLocationById.Execute(id);
+        var location = await getLocationById.ExecuteAsync(id);
 
         if (location is null)
         {
@@ -59,12 +59,12 @@ public class LocationsController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
-    public IActionResult Delete(
+    public async Task<IActionResult> Delete(
         Guid id,
         DeactivateLocation deactivateLocation
     )
     {
-        var result = deactivateLocation.Execute(id);
+        var result = await deactivateLocation.ExecuteAsync(id);
 
         if (!result)
         {
@@ -75,7 +75,7 @@ public class LocationsController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
-    public IActionResult Update(
+    public async Task<IActionResult> Update(
         Guid id,
         UpdateLocationRequest request,
         UpdateLocation updateLocation
@@ -85,7 +85,7 @@ public class LocationsController : ControllerBase
         {
             var input = LocationMapper.ToInput(id, request);
 
-            var location = updateLocation.Execute(input);
+            var location = await updateLocation.ExecuteAsync(input);
 
             if (location is null)
             {

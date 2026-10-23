@@ -12,8 +12,8 @@ public class GetLocationById
         _locationRepository = locationRepository;
     }
 
-    public Location? Execute(Guid id)
+    public async Task<Location?> ExecuteAsync(Guid id)
     {
-        return _locationRepository.GetById(id);
+        return await _locationRepository.GetByIdAsync(id);
     }
 }

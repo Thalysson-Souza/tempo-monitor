@@ -13,3 +13,6 @@ C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monito
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Domain.deps.json
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Domain.dll
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Domain.pdb
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Domain.deps.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Domain.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Domain.pdb

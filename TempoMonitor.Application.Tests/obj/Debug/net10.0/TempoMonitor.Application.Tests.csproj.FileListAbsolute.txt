@@ -110,3 +110,11 @@ C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.A
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Application.Tests.runtimeconfig.json
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Application.Tests.dll
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Application.Tests.pdb
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\testhost.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\xunit.abstractions.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\testhost.exe
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\xunit.runner.visualstudio.testadapter.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Application.Tests.deps.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Application.Tests.runtimeconfig.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Application.Tests.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Application.Tests.pdb

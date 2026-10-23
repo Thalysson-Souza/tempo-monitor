@@ -17,3 +17,6 @@ C:\Users\desen\OneDrive\Documentos\Thalysson\Projetos\tempo-monitor\tempo-monito
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Application.deps.json
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Application.dll
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Application.pdb
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Application.deps.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Application.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Application.pdb

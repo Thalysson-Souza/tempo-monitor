@@ -8,7 +8,7 @@ namespace TempoMonitor.Application.Tests.UseCases.Locations;
 public class UpdateLocationTests
 {
     [Fact]
-    public void Execute_ShouldUpdateLocation_WhenInputIsValid()
+    public async Task Execute_ShouldUpdateLocation_WhenInputIsValid()
     {
         var repository = new FakeLocationRepository();
         var useCase = new UpdateLocation(repository);
@@ -34,7 +34,7 @@ public class UpdateLocationTests
             Longitude = -43.1729
         };
 
-        var updatedLocation = useCase.Execute(input);
+        var updatedLocation = await useCase.ExecuteAsync(input);
 
         Assert.NotNull(updatedLocation);
         Assert.Equal(locationId, updatedLocation.Id);
@@ -45,7 +45,7 @@ public class UpdateLocationTests
     }
 
     [Fact]
-    public void Execute_ShouldThrowArgumentException_WhenLatitudeIsInvalid()
+    public async Task Execute_ShouldThrowArgumentException_WhenLatitudeIsInvalid()
     {
         var repository = new FakeLocationRepository();
         var useCase = new UpdateLocation(repository);
@@ -71,12 +71,12 @@ public class UpdateLocationTests
             Longitude = -43.1729
         };
 
-        var exception = Assert.Throws<ArgumentException>(() => useCase.Execute(input));
+        var exception = await Assert.ThrowsAsync<ArgumentException>(() => useCase.ExecuteAsync(input));
 
         Assert.Equal("Latitude must be between -90 and 90.", exception.Message);
         Assert.Single(repository.Locations);
 
-        var existingLocation = repository.GetById(locationId);
+        var existingLocation = await repository.GetByIdAsync(locationId);
 
         Assert.NotNull(existingLocation);
         Assert.Equal(-23.5505, existingLocation.Latitude);
@@ -84,7 +84,7 @@ public class UpdateLocationTests
     }
 
     [Fact]
-    public void Execute_ShouldThrowArgumentException_WhenLongitudeIsInvalid()
+    public async Task Execute_ShouldThrowArgumentException_WhenLongitudeIsInvalid()
     {
         var repository = new FakeLocationRepository();
         var useCase = new UpdateLocation(repository);
@@ -110,12 +110,12 @@ public class UpdateLocationTests
             Longitude = 999
         };
 
-        var exception = Assert.Throws<ArgumentException>(() => useCase.Execute(input));
+        var exception = await Assert.ThrowsAsync<ArgumentException>(() => useCase.ExecuteAsync(input));
 
         Assert.Equal("Longitude must be between -180 and 180.", exception.Message);
         Assert.Single(repository.Locations);
 
-        var existingLocation = repository.GetById(locationId);
+        var existingLocation = await repository.GetByIdAsync(locationId);
 
         Assert.NotNull(existingLocation);
         Assert.Equal(-23.5505, existingLocation.Latitude);

@@ -22,3 +22,7 @@ C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.I
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Infrastructure.runtimeconfig.json
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Infrastructure.dll
 C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Verification\TempoMonitor.Infrastructure.pdb
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Infrastructure.deps.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Infrastructure.runtimeconfig.json
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Infrastructure.dll
+C:\Users\desen\AppData\Local\Temp\TempoMonitor-Async-Review\TempoMonitor.Infrastructure.pdb

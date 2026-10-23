@@ -11,14 +11,14 @@ public class DeactivateLocation
         _locationRepository = locationRepository;
     }
 
-    public bool Execute(Guid locationId)
+    public async Task<bool> ExecuteAsync(Guid locationId)
     {
-        var location = _locationRepository.GetById(locationId);
+        var location = await _locationRepository.GetByIdAsync(locationId);
 
         if (location is null) return false;
 
         location.IsActive = false;
-        _locationRepository.Update(location);
+        await _locationRepository.UpdateAsync(location);
         return true;
     }
 }

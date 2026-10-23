@@ -13,9 +13,9 @@ public class UpdateLocation
         _locationRepository = locationRepository;
     }
 
-    public Location? Execute(UpdateLocationInput input)
+    public async Task<Location?> ExecuteAsync(UpdateLocationInput input)
     {
-        var location = _locationRepository.GetById(input.Id);
+        var location = await _locationRepository.GetByIdAsync(input.Id);
 
         if (location is null) return null;
 
@@ -37,7 +37,7 @@ public class UpdateLocation
         location.City = input.City;
         location.Latitude = input.Latitude;
         location.Longitude = input.Longitude;
-        _locationRepository.Update(location);
+        await _locationRepository.UpdateAsync(location);
         return location;
     }
 }

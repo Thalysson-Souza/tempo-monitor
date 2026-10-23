@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using TempoMonitor.Application.Abstractions.Locations;
 using TempoMonitor.Domain.Entities;
 using TempoMonitor.Infrastructure.Persistence;
@@ -19,19 +20,19 @@ public class LocationRepository : ILocationRepository
         await _context.SaveChangesAsync();
     }
 
-    public List<Location> GetAll()
+    public async Task<List<Location>> GetAllAsync()
     {
-        return _context.Locations.ToList();
+        return await _context.Locations.ToListAsync();
     }
 
-    public Location? GetById(Guid id)
+    public async Task<Location?> GetByIdAsync(Guid id)
     {
-        return _context.Locations.FirstOrDefault(location => location.Id == id);
+        return await _context.Locations.FirstOrDefaultAsync(location => location.Id == id);
     }
 
-    public Location? Update(Location location)
+    public async Task<Location?> UpdateAsync(Location location)
     {
-        var existingLocation = GetById(location.Id);
+        var existingLocation = await GetByIdAsync(location.Id);
 
         if (existingLocation is null)
         {
@@ -44,7 +45,7 @@ public class LocationRepository : ILocationRepository
         existingLocation.Longitude = location.Longitude;
         existingLocation.IsActive = location.IsActive;
 
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
         return existingLocation;
     }

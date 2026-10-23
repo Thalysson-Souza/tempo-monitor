@@ -7,7 +7,7 @@ namespace TempoMonitor.Application.Tests.UseCases.Locations;
 public class GetAllLocationsTests
 {
     [Fact]
-    public void Execute_ShouldReturnAllLocations()
+    public async Task Execute_ShouldReturnAllLocations()
     {
         var repository = new FakeLocationRepository();
 
@@ -33,7 +33,7 @@ public class GetAllLocationsTests
 
         var useCase = new GetAllLocations(repository);
 
-        var locations = useCase.Execute();
+        var locations = await useCase.ExecuteAsync();
 
         Assert.Equal(2, locations.Count);
     }
