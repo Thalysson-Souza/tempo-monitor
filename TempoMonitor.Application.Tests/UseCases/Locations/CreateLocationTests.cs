@@ -7,7 +7,7 @@ namespace TempoMonitor.Application.Tests.UseCases.Locations;
 public class CreateLocationTests
 {
     [Fact]
-    public void Execute_ShouldCreateLocation_WhenInputIsValid()
+    public async Task ExecuteAsync_ShouldCreateLocation_WhenInputIsValid()
     {
         var repository = new FakeLocationRepository();
         var useCase = new CreateLocation(repository);
@@ -20,7 +20,7 @@ public class CreateLocationTests
             Longitude = -46.6333
         };
 
-        var location = useCase.Execute(input);
+        var location = await useCase.ExecuteAsync(input);
 
         Assert.NotEqual(Guid.Empty, location.Id);
         Assert.Equal("Casa", location.Name);
@@ -32,7 +32,7 @@ public class CreateLocationTests
     }
 
     [Fact]
-    public void Execute_ShouldThrowArgumentException_WhenNameIsEmpty()
+    public async Task ExecuteAsync_ShouldThrowArgumentException_WhenNameIsEmpty()
     {
         var repository = new FakeLocationRepository();
         var useCase = new CreateLocation(repository);
@@ -45,14 +45,14 @@ public class CreateLocationTests
             Longitude = -46.6333
         };
 
-        var exception = Assert.Throws<ArgumentException>(() => useCase.Execute(input));
+        var exception = await Assert.ThrowsAsync<ArgumentException>(() => useCase.ExecuteAsync(input));
 
         Assert.Equal("Location name is required.", exception.Message);
         Assert.Empty(repository.Locations);
     }
 
     [Fact]
-    public void Execute_ShouldThrowArgumentException_WhenLatitudeIsInvalid()
+    public async Task ExecuteAsync_ShouldThrowArgumentException_WhenLatitudeIsInvalid()
     {
         var repository = new FakeLocationRepository();
         var useCase = new CreateLocation(repository);
@@ -65,14 +65,14 @@ public class CreateLocationTests
             Longitude = -46.6333
         };
 
-        var exception = Assert.Throws<ArgumentException>(() => useCase.Execute(input));
+        var exception = await Assert.ThrowsAsync<ArgumentException>(() => useCase.ExecuteAsync(input));
 
         Assert.Equal("Latitude must be between -90 and 90.", exception.Message);
         Assert.Empty(repository.Locations);
     }
 
     [Fact]
-    public void Execute_ShouldThrowArgumentException_WhenLongitudeIsInvalid()
+    public async Task ExecuteAsync_ShouldThrowArgumentException_WhenLongitudeIsInvalid()
     {
         var repository = new FakeLocationRepository();
         var useCase = new CreateLocation(repository);
@@ -85,7 +85,7 @@ public class CreateLocationTests
             Longitude = 999
         };
 
-        var exception = Assert.Throws<ArgumentException>(() => useCase.Execute(input));
+        var exception = await Assert.ThrowsAsync<ArgumentException>(() => useCase.ExecuteAsync(input));
 
         Assert.Equal("Longitude must be between -180 and 180.", exception.Message);
         Assert.Empty(repository.Locations);

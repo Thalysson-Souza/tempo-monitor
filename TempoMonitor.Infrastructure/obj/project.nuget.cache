@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xvmFAKeKMcE=",
+  "dgSpecHash": "pty0goVnHW0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj",
+  "projectFilePath": "c:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\desen\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\desen\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",

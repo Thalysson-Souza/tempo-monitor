@@ -13,10 +13,10 @@ public class LocationRepository : ILocationRepository
         _context = context;
     }
 
-    public void Add(Location location)
+    public async Task AddAsync(Location location)
     {
         _context.Locations.Add(location);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
     }
 
     public List<Location> GetAll()

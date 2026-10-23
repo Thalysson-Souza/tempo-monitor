@@ -7,9 +7,10 @@ public class FakeLocationRepository : ILocationRepository
 {
     public List<Location> Locations { get; } = [];
 
-    public void Add(Location location)
+    public Task AddAsync(Location location)
     {
         Locations.Add(location);
+        return Task.CompletedTask;
     }
 
     public List<Location> GetAll()

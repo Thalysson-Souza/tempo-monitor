@@ -686,14 +686,14 @@
         }
       }
     },
-    "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj": {
+    "c:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj",
         "projectName": "TempoMonitor.Infrastructure",
-        "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj",
+        "projectPath": "c:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\desen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1084,8 +1084,8 @@
               "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj": {
                 "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Domain\\TempoMonitor.Domain.csproj"
               },
-              "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj"
+              "c:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\desen\\OneDrive\\Documentos\\Thalysson\\Projetos\\tempo-monitor\\tempo-monitor\\TempoMonitor.Infrastructure\\TempoMonitor.Infrastructure.csproj"
               }
             }
           }
@@ -1105,6 +1105,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

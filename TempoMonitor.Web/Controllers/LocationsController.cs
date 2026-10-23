@@ -10,7 +10,7 @@ namespace TempoMonitor.Web.Controllers;
 public class LocationsController : ControllerBase
 {
     [HttpPost]
-    public IActionResult Create(
+    public async Task<IActionResult> Create(
         CreateLocationRequest request,
         CreateLocation createLocation
     )
@@ -19,7 +19,7 @@ public class LocationsController : ControllerBase
         {
             var input = LocationMapper.ToInput(request);
 
-            var location = createLocation.Execute(input);
+            var location = await createLocation.ExecuteAsync(input);
 
             return Ok(LocationMapper.ToResponse(location));
         }

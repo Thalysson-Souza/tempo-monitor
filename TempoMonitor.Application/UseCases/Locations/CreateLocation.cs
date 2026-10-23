@@ -15,7 +15,7 @@ public class CreateLocation
         _locationRepository = locationRepository;
     }
 
-    public Location Execute(CreateLocationInput input)
+    public async Task<Location> ExecuteAsync(CreateLocationInput input)
     {
 
         if (string.IsNullOrWhiteSpace(input.Name))
@@ -43,7 +43,7 @@ public class CreateLocation
             IsActive = true
         };
 
-        _locationRepository.Add(location);
+        await _locationRepository.AddAsync(location);
         return location;
     }
 }
